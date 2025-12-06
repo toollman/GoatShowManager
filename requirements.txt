@@ -1,0 +1,35 @@
+# -----------------------------
+# Core application dependencies
+# -----------------------------
+
+# For easy JSON serialization/deserialization of dataclasses (Goat, Owner, Show, Judge models)
+dataclasses-json==0.6.2
+
+# For building CLI menus and commands (temporary interface before GUI)
+click==8.1.7
+
+# HTTP client library for web requests (APIs, syncing, online data)
+requests==2.32.3
+
+# -----------------------------
+# Testing and quality assurance
+# -----------------------------
+
+# Unit testing framework
+pytest==8.3.3
+
+# Coverage reporting for pytest
+pytest-cov==5.0.0
+
+# Code formatter (PEP 8 compliance)
+black==24.10.0
+
+# Linting for style and error detection
+flake8==7.1.1
+
+# -----------------------------
+# Reporting and export
+# -----------------------------
+
+# Lightweight PDF generation library (for exhibitor reports)
+fpdf==1.7.2

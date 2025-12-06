@@ -1,0 +1,38 @@
+# -----------------------------
+# IDE-specific (already present)
+# -----------------------------
+/shelf/
+/workspace.xml
+/httpRequests/
+.idea/
+.vscode/
+
+# -----------------------------
+# Python cache and artifacts
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+
+# -----------------------------
+# Virtual environments
+# -----------------------------
+venv/
+.env/
+.venv/
+
+# -----------------------------
+# OS-specific junk files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Logs and coverage reports
+# -----------------------------
+*.log
+coverage/
+htmlcov/
+
