@@ -1,4 +1,5 @@
 import sys
+from datetime import date
 from src.models import Goat, Owner, Show, Judge
 
 # Temporary in-memory storage (replace later with database or file I/O)
@@ -10,7 +11,9 @@ judges = {}
 def register_goat():
     name = input("Enter goat name: ")
     breed = input("Enter breed: ")
-    age = int(input("Enter age: "))
+    date_entry = input('Enter date of birth in MM/DD/YYYY format')
+    month, day, year = map(int, date_entry.split('/'))
+    dob = date(year, month, day)
     owner_id = int(input("Enter owner ID (or 0 to create new): "))
 
     if owner_id == 0:
@@ -20,7 +23,7 @@ def register_goat():
         owners[owner_id] = Owner(id=owner_id, name=owner_name, contact_info=contact, goats=[])
 
     goat_id = len(goats) + 1
-    goat = Goat(id=goat_id, name=name, breed=breed, age=age, owner_id=owner_id)
+    goat = Goat(id=goat_id, name=name, breed=breed, date_of_birth=dob, owner_id=owner_id)
     goats[goat_id] = goat
     owners[owner_id].goats.append(goat_id)
 
