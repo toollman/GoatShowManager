@@ -5,6 +5,13 @@ It provides tools for recording participants, scheduling events, and generating 
 
 ---
 
+## Branch Convention
+
+The default branch for this repository is now **`main`**.  
+All development and pull requests should target `main` instead of `master`.
+
+---
+
 ## 🚀 Features
 - Manage goats, owners, and show entries
 - Track event schedules and results
