@@ -1,31 +1,38 @@
+openpyxl
 # -----------------------------
 # Core application dependencies
 # -----------------------------
 
+# GUI framework for building exhibitor interface
+PySide6==6.10.1
+
+# Data analysis and Excel integration
+pandas==2.3.3
+
 # For easy JSON serialization/deserialization of dataclasses (Goat, Owner, Show, Judge models)
-dataclasses-json==0.6.2
+dataclasses-json==0.6.7
 
 # For building CLI menus and commands (temporary interface before GUI)
-click==8.1.7
+click==8.3.1
 
 # HTTP client library for web requests (APIs, syncing, online data)
-requests==2.32.3
+requests==2.32.5
 
 # -----------------------------
 # Testing and quality assurance
 # -----------------------------
 
 # Unit testing framework
-pytest==8.3.3
+pytest==9.0.2
 
 # Coverage reporting for pytest
-pytest-cov==5.0.0
+pytest-cov==7.0.0
 
 # Code formatter (PEP 8 compliance)
-black==24.10.0
+black==25.12.0
 
 # Linting for style and error detection
-flake8==7.1.1
+flake8==7.3.0
 
 # -----------------------------
 # Reporting and export
@@ -33,3 +40,6 @@ flake8==7.1.1
 
 # Lightweight PDF generation library (for exhibitor reports)
 fpdf==1.7.2
+
+# Excel styling and formatting for payout reports
+openpyxl==3.1.5

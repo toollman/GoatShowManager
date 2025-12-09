@@ -1,12 +1,15 @@
 from dataclasses import dataclass
 from datetime import date
-from typing import Optional
+from src.utils.date_utils import calculate_age
 
 @dataclass
 class Goat:
     id: int
     name: str
     breed: str
-    date_of_birth: date
-    owner_id: int
-    registration_number: Optional[str] = None
+    dob: date
+    exhibitor_id: int
+
+    @property
+    def age(self) -> int:
+        return calculate_age(self.dob)
